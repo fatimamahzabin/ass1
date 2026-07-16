@@ -334,3 +334,80 @@ button:hover{
 .featured ul li{
     color: white;
 }
+
+.playground{
+    padding: 100px 80px;
+    background: #f8f6ff;
+    text-align: center;
+}
+
+.playground h2{
+    font-size: 48px;
+    color: #5b21b6;
+    margin-bottom: 20px;
+}
+
+.playground-description{
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.playground-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.playground-card{
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.playground-card:hover{
+    transform: translateY(-8px);
+}
+
+.icon{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.playground-card h3{
+    color: #5b21b6;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.playground-card p{
+    color: #666;
+    line-height: 1.7;
+}
+
+@media (max-width:992px){
+
+    .playground-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .playground{
+        padding: 70px 20px;
+    }
+
+    .playground h2{
+        font-size: 36px;
+    }
+
+    .playground-container{
+        grid-template-columns: 1fr;
+    }
+
+}
